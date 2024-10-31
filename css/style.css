@@ -6,7 +6,7 @@
 
 :root {
     --primary-color: #22b573;
-    --accent-color: #00bdd7;
+    --accent-color: #22b57380;
     --headline-color: #2E2E2E;
     --text-color: #525252;
     --white: #fff;
@@ -132,6 +132,14 @@ p {
     grid-auto-flow: row;
 }
 
+.card form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     max-width: 60rem;
     margin: 0 auto;
@@ -197,7 +205,10 @@ section {
 
 @media (max-width: 600px) {
     .overview-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .container {
+        padding-inline: 2rem;
     }
 }
   
